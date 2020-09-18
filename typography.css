@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;700;800&display=swap');
+
+* {
+    box-sizing: content-box;
+}
+
+/*
+    TODO
+
+    - default font change
+    - line height
+    - margins and paddings
+    - aligns
+ */
+
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+/* Section styling */
+
+section {
+    margin-bottom: 3rem;
+}
+
+/* Basic styling of paragraphs and headings */
+
+p {
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin: 3rem 0;
+    background: rgba(255, 0, 0, 0.25);
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Container */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
