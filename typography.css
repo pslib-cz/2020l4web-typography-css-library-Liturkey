@@ -74,19 +74,19 @@ h4, h5, h6 {
 
 /* Text aligns */
 
-.lit.text-left {
+.lit.text-align-left {
     text-align: left;
 }
 
-.lit.text-right {
+.lit.text-align-right {
     text-align: right;
 }
 
-.lit.text-center {
+.lit.text-align-center {
     text-align: center;
 }
 
-.lit.text-justify {
+.lit.text-align-justify {
     text-align: justify;
 }
 
