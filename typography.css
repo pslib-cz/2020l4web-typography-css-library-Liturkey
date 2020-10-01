@@ -31,11 +31,27 @@ p {
     line-height: 1.5;
 }
 
-h1.lit {
+p.lit.line.height.one {
+    line-height: 1;
+}
+
+p.lit.line.height.one-two {
+    line-height: 1.2;
+}
+
+p.lit.line.height.two {
+    line-height: 2;
+}
+
+header.lit {
+    margin: 3rem 0;
+}
+
+h1 {
     font-size: 4rem;
     font-weight: 800;
-    margin: 3rem 0;
     padding: 0.5rem 1.5rem;
+    margin: 0 0 1rem;
 }
 
 h1.lit.background {
@@ -53,6 +69,25 @@ h3 {
 
 h4, h5, h6 {
     font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Text aligns */
+
+.lit.text-left {
+    text-align: left;
+}
+
+.lit.text-right {
+    text-align: right;
+}
+
+.lit.text-center {
+    text-align: center;
+}
+
+.lit.text-justify {
+    text-align: justify;
 }
 
 /* Margins and paddings */
@@ -67,6 +102,38 @@ h4, h5, h6 {
     max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
+}
+
+/* Perex and meta tags */
+
+p.lit.perex {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+div.lit.meta {
+    opacity: 0.5;
+    font-size: 0.9rem;
+}
+
+div.lit.meta ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+div.lit.meta ul li {
+    display: inline-block;
+}
+
+div.lit.meta ul li::after {
+    display: inline-block;
+    content: "—";
+    margin: 0 0.5rem;
+}
+
+div.lit.meta ul li:last-child::after {
+    display: none;
 }
 
 /* Images */
@@ -92,8 +159,8 @@ table.lit {
     overflow-x: scroll;
 }
 
-table.lit.stripped tbody {
-
+table.lit.stripped tbody tr:nth-child(even) {
+    background: #f2f2f2;
 }
 
 table.lit, table.lit th, table.lit td {
@@ -109,5 +176,23 @@ table.lit th {
 }
 
 table.lit thead {
+    background: rgba(0, 85, 255, 0.25);
+}
+
+/* Colored backgrounds */
+
+.lit.bg-alert {
+    background: rgba(255, 0, 59, 0.25);
+}
+
+.lit.bg-success {
+    background: rgba(0, 255, 34, 0.25);
+}
+
+.lit.bg-warning {
+    background: rgba(255, 183, 0, 0.25);
+}
+
+.lit.bg-info {
     background: rgba(0, 85, 255, 0.25);
 }
