@@ -152,6 +152,22 @@ img.lit.full.width {
     width: 100vw;
 }
 
+figure.lit.small {
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+figure.lit.small img {
+    width: 100%;
+    max-width: 100%;
+}
+
+figure.lit.small figcaption {
+    opacity: 0.6;
+    font-style: italic;
+}
+
 /* Tables */
 
 table.lit {
@@ -195,4 +211,29 @@ table.lit thead {
 
 .lit.bg-info {
     background: rgba(0, 85, 255, 0.25);
+}
+
+@media print {
+    h1 {
+        padding: 0;
+    }
+
+    img.lit.responsive {
+        width: 500px;
+        margin: 0 auto;
+        display: block;
+        page-break-inside: avoid;
+    }
+
+    img.lit.full.width {
+        left: 0;
+        margin: 0 auto;
+        width: 500px;
+        display: block;
+        page-break-inside: avoid;
+    }
+
+    figure.lit.small {
+        page-break-inside: avoid;
+    }
 }
