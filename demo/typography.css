@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;700;800&display=swap');
+
+* {
+    box-sizing: content-box;
+}
+
+/*
+    TODO
+
+    - default font change
+    - line height
+    - margins and paddings
+    - aligns
+    - tables
+ */
+
+body {
+    font-family: 'Roboto Slab', serif;
+    overflow-x: hidden;
+}
+
+/* Section styling */
+
+section {
+    margin-bottom: 3rem;
+}
+
+/* Basic styling of paragraphs and headings */
+
+p {
+    line-height: 1.5;
+}
+
+p.lit.line.height.one {
+    line-height: 1;
+}
+
+p.lit.line.height.one-two {
+    line-height: 1.2;
+}
+
+p.lit.line.height.two {
+    line-height: 2;
+}
+
+header.lit {
+    margin: 3rem 0;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    padding: 0.5rem 1.5rem;
+    margin: 0 0 1rem;
+}
+
+h1.lit.background {
+    background: rgba(0, 85, 255, 0.25);
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4, h5, h6 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Text aligns */
+
+.lit.text-align-left {
+    text-align: left;
+}
+
+.lit.text-align-right {
+    text-align: right;
+}
+
+.lit.text-align-center {
+    text-align: center;
+}
+
+.lit.text-align-justify {
+    text-align: justify;
+}
+
+/* Margins and paddings */
+
+.lit.margins {
+    margin: 1rem 0;
+}
+
+/* Container */
+
+.lit.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Perex and meta tags */
+
+p.lit.perex {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+div.lit.meta {
+    opacity: 0.5;
+    font-size: 0.9rem;
+}
+
+div.lit.meta ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+div.lit.meta ul li {
+    display: inline-block;
+}
+
+div.lit.meta ul li::after {
+    display: inline-block;
+    content: "—";
+    margin: 0 0.5rem;
+}
+
+div.lit.meta ul li:last-child::after {
+    display: none;
+}
+
+/* Images */
+
+img.lit.responsive {
+    max-width: 100%;
+}
+
+img.lit.full.width {
+    left: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    max-width: 100vw;
+    position: relative;
+    right: 50%;
+    width: 100vw;
+}
+
+figure.lit.small {
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+figure.lit.small img {
+    width: 100%;
+    max-width: 100%;
+}
+
+figure.lit.small figcaption {
+    opacity: 0.6;
+    font-style: italic;
+}
+
+/* Tables */
+
+table.lit {
+    width: 100%;
+    overflow-x: scroll;
+}
+
+table.lit.stripped tbody tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+table.lit, table.lit th, table.lit td {
+    border-collapse: collapse;
+}
+
+table.lit th, table.lit td {
+    padding: 0.75rem 1rem;
+}
+
+table.lit th {
+    text-align: inherit;
+}
+
+table.lit thead {
+    background: rgba(0, 85, 255, 0.25);
+}
+
+/* Colored backgrounds */
+
+.lit.bg-alert {
+    background: rgba(255, 0, 59, 0.25);
+}
+
+.lit.bg-success {
+    background: rgba(0, 255, 34, 0.25);
+}
+
+.lit.bg-warning {
+    background: rgba(255, 183, 0, 0.25);
+}
+
+.lit.bg-info {
+    background: rgba(0, 85, 255, 0.25);
+}
+
+@media print {
+    h1 {
+        padding: 0;
+    }
+
+    img.lit.responsive {
+        width: 500px;
+        margin: 0 auto;
+        display: block;
+        page-break-inside: avoid;
+    }
+
+    img.lit.full.width {
+        left: 0;
+        margin: 0 auto;
+        width: 500px;
+        display: block;
+        page-break-inside: avoid;
+    }
+
+    figure.lit.small {
+        page-break-inside: avoid;
+    }
+}
